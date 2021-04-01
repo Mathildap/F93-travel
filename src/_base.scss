@@ -176,35 +176,35 @@ nav {
     margin-left: -60%;
 }
 
-/* NAVIGTION MANUAL */
-.navigation-auto {
-    position: absolute;
-    display: flex;
-    width: 100%;
-    justify-content: center;
-    margin-top: -150px;
-}
-.navigation-auto div {
-    border: 2px solid #000;
-    padding: 5px;
-    border-radius: 10px;
-    transition: 1s;
-}
-.navigation-auto div:not(:last-child) {
-    margin-right: 30px;
-}
-#radio1.checked ~ .navigation-auto .auto-btn1 {
-    background-color: #000;
-}
-#radio1.checked ~ .navigation-auto .auto-btn1 {
-    background-color: #000;
-}
-#radio1.checked ~ .navigation-auto .auto-btn1 {
-    background-color: #000;
-}
-#radio1.checked ~ .navigation-auto .auto-btn1 {
-    background-color: #000;
-}
+// /* NAVIGTION AUTO */
+// .navigation-auto {
+//     position: absolute;
+//     display: flex;
+//     width: 100%;
+//     justify-content: center;
+//     margin-top: -150px;
+// }
+// .navigation-auto div {
+//     border: 2px solid #000;
+//     padding: 5px;
+//     border-radius: 10px;
+//     transition: 1s;
+// }
+// .navigation-auto div:not(:last-child) {
+//     margin-right: 30px;
+// }
+// #radio1.checked ~ .navigation-auto .auto-btn1 {
+//     background-color: #000;
+// }
+// #radio2.checked ~ .navigation-auto .auto-btn2 {
+//     background-color: #000;
+// }
+// #radio3.checked ~ .navigation-auto .auto-btn3 {
+//     background-color: #000;
+// }
+// #radio4.checked ~ .navigation-auto .auto-btn4 {
+//     background-color: #000;
+// }
 /* LOG OUT BTN */
 .log-out-btn {
     position: relative;
