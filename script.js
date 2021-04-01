@@ -1,6 +1,4 @@
 console.log("Funkar");
-// - - - - - - - - - - USERS - - - - - - - - - - //
-import { userArray } from "./userInfo.js";
 
 // - - - - - - - - - - LOCAL STORAGE - - - - - - - - - - //
 if (localStorage.getItem("User")) {
@@ -8,6 +6,19 @@ if (localStorage.getItem("User")) {
 } else {
     printStartPage();
 };
+
+// - - - - - - - - - - USERS - - - - - - - - - - //
+let users = [
+    {uName: "Mathilda", pWord: "pettersson"},
+    {uName: "Frida", pWord: "olsson"},
+    {uName: "Sara", pWord: "resander"},
+    {uName: "Emma", pWord: "adamsson"},
+    {uName: "Ella", pWord: "liljebäck"},
+    {uName: "Isabelle", pWord: "johansson"},
+    {uName: "Patrizia", pWord: "abelli"},
+    {uName: "Julia", pWord: "hagström"},
+    {uName: "Stina", pWord: "svensson"}
+]
 
 // - - - - - - - - - - STARTPAGE - - - - - - - - - - //
 function printStartPage() {
@@ -27,7 +38,7 @@ function printStartPage() {
 };
 
 // - - - - - - - - - - LOG IN FUNCTION - - - - - - - - - - //
-function logIn(users) {
+function logIn() {
     let uName = document.getElementById("uName").value;
     let pWord = document.getElementById("pWord").value;
 
@@ -155,10 +166,53 @@ function printPhotos() {
             <h3 class="sp-h4">Epic pics</h3>
             <p class="sp-p">Medans vi längtar och väntar in nya minnen för livet, kan vi njuta av några gamla!</p>
         </div>
-        <div class="img-slide">Bildspel kommer</div> 
+        <div class="slider">
+            <div class="slides">
+                <input type="radio" name ="radio-btn" id="radio1">
+                <input type="radio" name ="radio-btn" id="radio2">
+                <input type="radio" name ="radio-btn" id="radio3">
+                <input type="radio" name ="radio-btn" id="radio4">
+
+                <div class="slide first">
+                    <img src="./img-slide/img1.jpg" alt="">
+                </div>
+                <div class="slide">
+                    <img src="./img-slide/img2.jpg" alt="">
+                </div>
+                <div class="slide">
+                    <img src="./img-slide/img3.jpg" alt="">
+                </div>
+                <div class="slide">
+                    <img src="./img-slide/img4.png" alt="" class="emma">
+                </div>
+            </div>
+
+            <div class="navigation-auto">
+                <div class="auto-btn1"></div>
+                <div class="auto-btn2"></div>
+                <div class="auto-btn3"></div>
+                <div class="auto-btn4"></div>
+            </div>
+
+            <div class="navigation-manual">
+                <label for="radio1" class="manual-btn"></label>
+                <label for="radio2" class="manual-btn"></label>
+                <label for="radio3" class="manual-btn"></label>
+                <label for="radio4" class="manual-btn"></label>
+            </div>
+        </div> 
     </section>
     <button id="logOutBtn" class="log-out-btn">Checka ut</button>
     </section>`;
+
+    let counter = 1;
+    setInterval(function() {
+        document.getElementById("radio" + counter).checked = true;
+        counter++;
+        if (counter > 4) {
+            counter = 1;
+        };
+    }, 2000);
 };
 
 // - - - - - - - - - - LOG OUT - - - - - - - - - - //
