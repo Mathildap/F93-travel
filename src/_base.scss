@@ -1,0 +1,122 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 500px;
+}
+/* - - - - - - - - - - STARTPAGE - - - - - - - - - - */
+.log-in-page {
+    height: 100vh;
+    background-image: url("../img/travel-pic.jpg");
+    background-size: cover;
+    z-index: 1;
+}
+.login-container {
+    width: 65%;
+    height: 330px;
+    margin: auto;
+    position: relative;
+    top: 60px;
+    background-color: rgba(255, 255, 255, 0.95);
+    box-shadow: 0px 0px 3px 1px #e9e1d7;
+    border: 1px solid rgba(255,255,255,0.4);
+    border-radius: 2px;
+    z-index: 2;
+}
+.input-container {
+    margin: 20px auto;
+}
+h3 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 25px;
+    text-transform: uppercase;
+    text-align: center;
+}
+.input-field {
+    display: block;
+    margin: 10px auto;
+    width: 70%;
+    font-family: 'New Tegomin', serif;
+    letter-spacing: 1px;
+    outline: none;
+}
+.login-btn, .log-out-btn {
+    display: block;
+    font-family: 'Oswald', sans-serif;
+    color: rgb(185, 211, 200);
+    font-size: 17px;
+    text-transform: uppercase;
+    font-weight: lighter;
+    background-color: rgb(44, 43, 43);
+    box-shadow: 0px 0px 3px 1px #e9e1d7;
+    border: 1px solid rgba(255,255,255,0.4);
+    border-radius: 2px;
+    padding: 10px 15px;
+    margin: auto;
+    margin-top: 30px;
+    border: 0;
+    outline: none;
+}
+.login-btn:hover, .log-out-btn:hover {
+    background-color: rgba(44, 43, 43, 0.664);
+}
+.error-msg-p {
+    text-align: center;
+    font-family: 'Oswald', serif;
+    color: rgb(115, 184, 155);
+    margin: 0px;
+}
+
+/* - - - - - - - - - - LOGGED IN STARPAGE - - - - - - - - - - */
+.city-img {
+    background-size: contain;
+    position: absolute;
+    z-index: 1;
+}
+.logged-in-sp {
+    height: 100vh;
+    background-size: cover;
+    background-image: url("../img/city.jpg");
+}
+
+/* MENU */
+nav {
+    height: 50px;
+    display: flex;
+    justify-content: space-around;
+    background-color: #fff;
+}
+.nav-links {
+    font-family: 'Oswald', serif;
+    font-weight: lighter;
+    letter-spacing: 2px;
+    list-style: none;
+    text-align: center;
+    margin: auto 0;
+    cursor: pointer;
+}
+.nav-links:hover {
+    color: rgb(115, 184, 155);
+}
+
+/* INFO SECTION */
+.sp-info {
+    width: 80%;
+    height: 500px;
+    background-color: #ffffffd8;
+    border: 2px solid #ffffff;
+    border-radius: 5px;
+    position: relative;
+    z-index: 4;
+    margin: 40px auto 10px auto;
+}
+.sp-text-box {
+    margin: 15px;
+}
+.sp-p {
+    font-family: 'Montserrat', sans-serif;
+}
+/* LOG OUT BTN */
+.log-out-btn {
+    position: relative;
+    z-index: 4;
+}
