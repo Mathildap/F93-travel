@@ -196,24 +196,7 @@ function printPhotos() {
     </section>
     <button id="logOutBtn" class="log-out-btn">Checka ut</button>
     </section>`;
-
-    // let counter = 1;
-    // setInterval(function() {
-    //     document.getElementById("radio" + counter).checked = true;
-    //     counter++;
-    //     if (counter > 4) {
-    //         counter = 1;
-    //     };
-    // }, 2000);
 };
-
-            // <div class="navigation-auto">
-            //     <div class="auto-btn1"></div>
-            //     <div class="auto-btn2"></div>
-            //     <div class="auto-btn3"></div>
-            //     <div class="auto-btn4"></div>
-            // </div>
-
 // - - - - - - - - - - LOG OUT - - - - - - - - - - //
 function logOut() {
     location.reload();
